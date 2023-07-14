@@ -1,0 +1,96 @@
+$vt-namespace: 'pay-toast';
+$vt-toast-min-width: 400px;
+// $vt-toast-max-width: 600px !default;
+$vt-toast-background: #ffffff;
+
+$vt-toast-min-height: 60px;
+$vt-toast-max-height: 60px;
+
+$vt-color-default: #ddecf9;
+$vt-text-color-default: #363636;
+// $vt-color-info: #2196f3 !default;
+// $vt-text-color-info: #363636 !default;
+$vt-color-success: #ddecf9;
+$vt-text-color-success: #363636;
+// $vt-color-warning: #ffc107 !default;
+// $vt-text-color-warning: #363636 !default;
+$vt-color-error: #fdd6cf;
+$vt-text-color-error: #363636;
+
+// $vt-color-progress-default: linear-gradient(to right, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55) !default;
+
+// $vt-mobile: "only screen and (max-width : 600px)" !default;
+// $vt-not-mobile: "only screen and (min-width : 600px)" !default;
+$vt-font-family: Noto Sans TC, "Lato", Helvetica, "Roboto", Arial, sans-serif;
+// $vt-z-index: 9999 !default;
+
+@import "vue-toastification/src/scss/_variables";
+@import "vue-toastification/dist/index.css";
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+.Vue-Toastification__container {
+    padding: 137px;
+    z-index: 999999;
+}
+.Vue-Toastification__toast {
+    min-height: $vt-toast-min-height;
+    max-height: $vt-toast-max-height;
+    min-width: $vt-toast-min-width;
+    font-family: $vt-font-family;
+    border-radius: 4px;
+    padding: 8px 20px;
+}
+.Vue-Toastification__toast-body {
+    flex: 1;
+    line-height: 44px;
+    font-size: 16px;
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+.Vue-Toastification__toast--default {
+    background-color: $vt-color-default;
+    color: $vt-text-color-default;
+}
+.Vue-Toastification__toast--success {
+    background-color: $vt-color-success;
+    color: $vt-text-color-success;
+}
+.Vue-Toastification__toast--error {
+    background-color: $vt-color-error;
+    color: $vt-text-color-error;
+}
+.Vue-Toastification__icon {
+    width: 48px;
+    height: 44px;
+    margin: 2px 8px auto 0px;
+}
+
+// .toast-slide-enter-active {
+//   animation: slideIn 0.05s ease-out;
+// }
+// .toast-slide-leave-active {
+//  animation: slideOut 0.05s ease-out;
+// }
+
+// @keyframes slideIn {
+//   0%{
+//     left: 100%;
+//     opacity: 0;
+//   }
+//   100%{
+//     left: 50%;
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes slideOut {
+//   0%{
+//     left: 50%;
+//     opacity: 1;
+//   }
+//   100%{
+//     left: 100%;
+//     opacity: 0;
+//   }
+// }

@@ -1,0 +1,18 @@
+@charset "utf-8";
+@import 'select';
+@import 'datepicker';
+@import 'toast';
+@import 'textEditor';
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+* {
+  font-family: Noto Sans TC, sans-serif;
+}
+
+body.modal-is-open {
+  overflow-y: hidden;
+}
+
+input::placeholder {
+  color: #8c8c8c;
+}

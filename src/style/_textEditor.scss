@@ -1,0 +1,14 @@
+.tox-swatches-menu .tox-swatch{
+  &.tox-swatch--remove,
+  &.tox-collection__item--enabled{
+    svg{
+      display: inline-block;
+    }
+  }
+  svg{
+    display:none;
+  }
+}
+.tox .tox-swatches__picker-btn svg{
+  display: inline-block;
+}
